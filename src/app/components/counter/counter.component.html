@@ -1,11 +1,11 @@
 <div class="counter-section">
   <h2 class="heading">Counter App</h2>
   <div class="counter-number">
-    <h1>0</h1>
+    <h1>{{ count$ | async }}</h1>
   </div>
   <div class="counter-button">
-    <button>Increase</button>
-    <button>Decrease</button>
-    <button>Reset</button>
+    <button (click)="increment()">Increase</button>
+    <button (click)="decrement()">Decrease</button>
+    <button (click)="reset()">Reset</button>
   </div>
 </div>
